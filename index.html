@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RANJIT CLOUD GAMING</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #080b18;
+  color: white;
+}
+
+header {
+  padding: 22px 15px;
+  text-align: center;
+  background: linear-gradient(120deg,#101b45,#502080);
+}
+
+header h1 {
+  color: #00eaff;
+  font-size: 25px;
+}
+
+header p {
+  margin-top: 8px;
+  color: #ddd;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  background: #11162a;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.container {
+  padding: 18px;
+}
+
+.welcome {
+  background: #151d36;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 22px;
+}
+
+.welcome h2 {
+  color: #00eaff;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.section-title {
+  margin: 20px 0 15px;
+  color: #00eaff;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+
+.game {
+  background: #151d36;
+  border-radius: 13px;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #29345c;
+}
+
+.game .emoji {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.game h3 {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+button {
+  background: linear-gradient(90deg,#007bff,#8a2be2);
+  color: white;
+  border: none;
+  padding: 11px;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.status {
+  background: #151d36;
+  padding: 17px;
+  border-radius: 12px;
+  margin-top: 22px;
+  line-height: 1.8;
+}
+
+.status h3 {
+  color: #00eaff;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 10px;
+  color: #888;
+  font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🎮 RANJIT CLOUD GAMING</h1>
+  <p>Play Your Favorite Games Anywhere</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#games">Games</a>
+  <a href="#server">Server</a>
+</nav>
+
+<div class="container">
+
+  <section class="welcome" id="home">
+    <h2>Welcome Gamer! 👋</h2>
+    <p>
+      Welcome to RANJIT CLOUD GAMING.
+      Your gaming world is here.
+      Enjoy a simple gaming dashboard in Nepali and English.
+    </p>
+  </section>
+
+  <h2 class="section-title" id="games">🔥 Popular Games</h2>
+
+  <div class="games">
+
+    <div class="game">
+      <div class="emoji">🚗</div>
+      <h3>GTA V</h3>
+      <button onclick="demo('GTA V')">Play Demo</button>
+    </div>
+
+    <div class="game">
+      <div class="emoji">🏎️</div>
+      <h3>Forza Horizon</h3>
+      <button onclick="demo('Forza Horizon')">Play Demo</button>
+    </div>
+
+    <div class="game">
+      <div class="emoji">⚔️</div>
+      <h3>Action Games</h3>
+      <button onclick="demo('Action Games')">Play Demo</button>
+    </div>
+
+    <div class="game">
+      <div class="emoji">🏁</div>
+      <h3>Racing Games</h3>
+      <button onclick="demo('Racing Games')">Play Demo</button>
+    </div>
+
+  </div>
+
+  <section class="status" id="server">
+    <h3>☁️ Cloud Server Status</h3>
+    <p>Server: Demo Mode</p>
+    <p>Streaming: Not Connected</p>
+    <p>Language: Nepali / English</p>
+  </section>
+
+</div>
+
+<footer>
+  <p>Made by RANJIT 3XZX</p>
+  <p>RANJIT CLOUD GAMING © 2026</p>
+</footer>
+
+<script>
+function demo(game) {
+  alert(
+    game + " Demo\n\n" +
+    "Cloud gaming server ahile connect bhayeko chaina.\n" +
+    "Yo dashboard ko demo matra ho."
+  );
+}
+</script>
+
+</body>
+</html>
